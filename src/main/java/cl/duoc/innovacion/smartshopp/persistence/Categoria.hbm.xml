@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-05-2017 15:38:00 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="cl.duoc.innovacion.smartshopp.persistence.Categoria" table="categoria" catalog="innovacion" optimistic-lock="version">
+        <id name="idCategoria" type="int">
+            <column name="id_categoria" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" />
+        </property>
+    </class>
+</hibernate-mapping>

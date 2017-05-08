@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-05-2017 15:38:00 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="cl.duoc.innovacion.smartshopp.persistence.Producto" table="producto" catalog="innovacion" optimistic-lock="version">
+        <id name="idProducto" type="int">
+            <column name="id_producto" />
+            <generator class="assigned" />
+        </id>
+        <property name="idCategoria" type="java.lang.Integer">
+            <column name="id_categoria" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" length="50" />
+        </property>
+        <property name="valor" type="java.lang.Integer">
+            <column name="valor" />
+        </property>
+        <property name="stock" type="java.lang.Integer">
+            <column name="stock" />
+        </property>
+        <property name="tamano" type="java.lang.Integer">
+            <column name="tamano" />
+        </property>
+        <property name="color" type="string">
+            <column name="color" length="20" />
+        </property>
+        <property name="peso" type="string">
+            <column name="peso" />
+        </property>
+        <property name="talla" type="string">
+            <column name="talla" length="4" />
+        </property>
+        <property name="descontinuado" type="java.lang.Character">
+            <column name="descontinuado" length="1" />
+        </property>
+        <property name="ultimaActualizacion" type="timestamp">
+            <column name="ultima_actualizacion" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

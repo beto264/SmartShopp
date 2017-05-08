@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-05-2017 15:38:00 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="cl.duoc.innovacion.smartshopp.persistence.Cupon" table="cupon" catalog="innovacion" optimistic-lock="version">
+        <id name="idCupon" type="int">
+            <column name="id_cupon" />
+            <generator class="assigned" />
+        </id>
+        <property name="codigo" type="string">
+            <column name="codigo" />
+        </property>
+        <property name="idOferta" type="java.lang.Integer">
+            <column name="id_oferta" />
+        </property>
+        <property name="idUsuario" type="java.lang.Integer">
+            <column name="id_usuario" />
+        </property>
+    </class>
+</hibernate-mapping>

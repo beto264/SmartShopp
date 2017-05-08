@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-05-2017 15:38:00 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="cl.duoc.innovacion.smartshopp.persistence.Oferta" table="oferta" catalog="innovacion" optimistic-lock="version">
+        <id name="idOferta" type="int">
+            <column name="id_oferta" />
+            <generator class="assigned" />
+        </id>
+        <property name="idTienda" type="java.lang.Integer">
+            <column name="id_tienda" />
+        </property>
+        <property name="idCategoria" type="java.lang.Integer">
+            <column name="id_categoria" />
+        </property>
+        <property name="fechaPublicacion" type="date">
+            <column name="fecha_publicacion" length="10" />
+        </property>
+        <property name="destacada" type="java.lang.Character">
+            <column name="destacada" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>
